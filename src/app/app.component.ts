@@ -57,7 +57,7 @@ export class AppComponent {
       this.usuario.password = this.user.name;
       this.usuario.tipo = 'usuario';
       this.altaUsuario();
-      //this.router.navigate(['link'])
+      this.router.navigate(['/link'])
     });
   }
 
@@ -69,13 +69,8 @@ export class AppComponent {
       this.usuario.password = this.user.name;
       this.usuario.tipo = 'usuario';
       this.altaUsuario();
-      //this.router.navigate(['link'])
+      this.router.navigate(['/link'])
     });
-  }
-  signInWithUser(): void {
-    this.usuariosServicio.Login(this.Login).subscribe(
-      //this.router.navigate(['link'])
-    );
   }
   obtenerUsuarios() {
     this.usuariosServicio.obtenerUsuario().subscribe(
